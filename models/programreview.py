@@ -10,52 +10,54 @@
 
 from openerp import models, fields, api
 
+
 class ProgramReview(models.Model):
-	_name = 'sparkit.programreview'
-	_order = 'quarter desc'
 
-	name = fields.Char(compute='_get_name', readonly=True)
-	community_id = fields.Many2one('sparkit.community',
-		string="Community", ondelete='cascade')
-	community_name = fields.Char(related='community_id.name')
-	quarter = fields.Selection([('1', 'Q1 2017'),
-		('2', 'Q2 2017'),
-		('3', 'Q3 2017'),
-		('4', 'Q4 2017'),
-		('5', 'Q1 2018'),
-		('6', 'Q2 2018'),
-		('7', 'Q3 2018'),
-		('8', 'Q4 2018')], select=True, string="Quarter")
-	color = fields.Selection([('green', 'Green'),
-		('yellow', 'Yellow'),
-		('red', 'Red')], select=True, string="Color")
-	quarter_review = fields.Text(string="Quarter Review")
-	comments = fields.Text(string="Comments")
-	quarter_name = fields.Char(compute='_get_quarter_name', string="Quarter Name", store=True)
-	country = fields.Char(compute='_get_country', readonly=True)
-	country_region = fields.Char(compute='_get_region', readonly=True)
+    _name = 'sparkit.programreview'
+    _order = 'quarter desc'
 
-	@api.one
-	@api.depends('quarter')
-	def _get_quarter_name(self):
-		for r in self:
-			if r.quarter:
-				r.quarter_name = dict(self.fields_get(allfields=['quarter'])['quarter']['selection'])[self.quarter]
+    name = fields.Char(compute='_get_name', readonly=True)
+    community_id = fields.Many2one('sparkit.community', string="Community", ondelete='cascade')
+    facilitator_id = fields.Many2one('res.users', string="Facilitator", ondelete='cascade')
+    community_name = fields.Char(related='community_id.name')
+    quarter = fields.Selection([('1', 'Q1 2017'),
+                                ('2', 'Q2 2017'),
+                                ('3', 'Q3 2017'),
+                                ('4', 'Q4 2017'),
+                                ('5', 'Q1 2018'),
+                                ('6', 'Q2 2018'),
+                                ('7', 'Q3 2018'),
+                                ('8', 'Q4 2018')], select=True, string="Quarter")
+    color = fields.Selection([('green', 'Green'),
+                              ('yellow', 'Yellow'),
+                              ('red', 'Red')], select=True, string="Color")
+    quarter_review = fields.Text(string="Quarter Review")
+    comments = fields.Text(string="Comments")
+    quarter_name = fields.Char(compute='_get_quarter_name', string="Quarter Name", store=True)
+    country = fields.Char(compute='_get_country', readonly=True)
+    country_region = fields.Char(compute='_get_region', readonly=True)
 
-	@api.multi
-	def _get_name(self):
-		for r in self:
-			if r.community_id and r.quarter_name:
-				r.name = r.community_id.community_number + ' ' + r.community_id.name + ' - ' + r.quarter_name
+    @api.one
+    @api.depends('quarter')
+    def _get_quarter_name(self):
+        for r in self:
+            if r.quarter:
+                r.quarter_name = dict(self.fields_get(allfields=['quarter'])['quarter']['selection'])[self.quarter]
 
-	@api.depends('community_id')
-	def _get_country(self):
-		for r in self:
-			if r.community_id:
-				r.country = r.community_id.country_id.name
+    @api.multi
+    def _get_name(self):
+        for r in self:
+            if r.community_id and r.quarter_name:
+                r.name = r.community_id.community_number + ' ' + r.community_id.name + ' - ' + r.quarter_name
 
-	@api.depends('community_id')
-	def _get_region(self):
-		for r in self:
-			if r.community_id:
-				r.country_region = r.community_id.country_region
+    @api.depends('community_id')
+    def _get_country(self):
+        for r in self:
+            if r.community_id:
+                r.country = r.community_id.country_id.name
+
+    @api.depends('community_id')
+    def _get_region(self):
+        for r in self:
+            if r.community_id:
+                r.country_region = r.community_id.country_region

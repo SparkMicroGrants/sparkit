@@ -13,6 +13,7 @@
                 <field name="name" invisible="1"/>
                 <field name="community_id" options="{'no_create': True}"/>
 								<field name="quarter"/>
+                <field name="facilitator_id" options="{'no_create': True}"/>
                 <field name="color"/>
 								<field name="quarter_review"/>
                 <field name="comments"/>                
