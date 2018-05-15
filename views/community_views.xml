@@ -626,6 +626,7 @@
 												<field name="partnership_agreement_name" invisible="1"/>
 												<field name="partnership_agreement" widget="binary" filename="partnership_agreement_name"/>
 												<field name="number_signed_partnership_agreement"/>
+												<field name="num_hh_that_signed_partnership"/>
 												<field name="partnership_agreement_date"/>
 											</group>
 											<group colspan="2" col="2" class="no_style" string="Proposals">
