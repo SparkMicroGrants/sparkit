@@ -533,6 +533,10 @@
 													<field name="num_hh_in_planning_group"/>
 													<field name="num_ppl_in_planning_group" invisible="1"/>
 												</group>
+                                                <group string="Planning Group" colspan="2" col="1"
+													attrs="{'invisible': [('phase', '=', 'community_identification')]}">
+													<field name="num_hh_that_signed_partnership"/>
+												</group>
 											</group>
 										</page>
 		  							<page string="Location">
@@ -626,7 +630,6 @@
 												<field name="partnership_agreement_name" invisible="1"/>
 												<field name="partnership_agreement" widget="binary" filename="partnership_agreement_name"/>
 												<field name="number_signed_partnership_agreement"/>
-												<field name="num_hh_that_signed_partnership"/>
 												<field name="partnership_agreement_date"/>
 											</group>
 											<group colspan="2" col="2" class="no_style" string="Proposals">
