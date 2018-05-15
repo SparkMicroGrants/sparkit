@@ -24,8 +24,7 @@
       multi="True"/>
 
     <menuitem id="cmty_name_change_wizard_menu" name="Cmty Name Changer"
-      action="action_cmty_name_change_wizard"
-      parent="sparkit.community_configuration"/>
+      action="action_cmty_name_change_wizard"/>
 
   </data>
  </openerp>
