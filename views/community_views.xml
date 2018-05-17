@@ -528,7 +528,7 @@
 													<field name="num_hh_community" col="2"/>
 													<field name="num_ppl_community" col="2"/>
 												</group>
-												<group string="Planning Group" colspan="2" col="2"
+												<group string="Signed Partneship" colspan="2" col="2"
 													attrs="{'invisible': [('phase', '=', 'community_identification')]}">
 													<field name="num_hh_in_planning_group"/>
 													<field name="num_ppl_in_planning_group" invisible="1"/>
