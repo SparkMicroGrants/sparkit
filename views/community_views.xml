@@ -699,9 +699,7 @@
 													<field name="bank_account"/>
 												</group>
 												<group colspan="2" col="2">
-													<field name="all_goals_ideas"/> <!--first change-->
 													<field name="goals_selected"/>
-													<field name="all_pathways_description"/> <!--second change-->
 													<field name="project_description"/>
 												</group>
 												<group colspan="4" col="11">
