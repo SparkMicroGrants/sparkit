@@ -268,7 +268,6 @@ class Community(models.Model):
                                     help="Please enter the number of ideas the community brainstormed for their pathway.",
                                     track_visibility='onchange')
     
-    
     project_description = fields.Text(string = "Pathways - Selected Pathway Description",
                                       help="Please describe the community's chosen project in their own words.",
                                       track_visibility='onchange')
