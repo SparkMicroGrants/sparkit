@@ -700,6 +700,7 @@
 												</group>
 												<group colspan="2" col="2">
 													<field name="goals_selected"/>
+													<field name="all_goals_selected"/>
 													<field name="project_description"/>
 												</group>
 												<group colspan="4" col="11">
