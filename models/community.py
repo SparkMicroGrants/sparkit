@@ -229,7 +229,7 @@ class Community(models.Model):
                                  help="Please enter the number of ideas the community brainstormed for their goal.",
                                  track_visibility='onchange')
     # Change1
-    all_goals_ideas = fields.Text(string="Goals - Brief descriptionof of all goals",
+    all_goals_ideas = fields.Text(string="Goals - Brief description of all goals",
                                  help="Please give a brief decsription of how and why these goals were selected by the community.",
                                  track_visibility='onchange')
     goals_selected = fields.Text(string="Goals - Selected Goal Description",
@@ -265,12 +265,25 @@ class Community(models.Model):
     indicator1_2years_target = fields.Char(string="2 years PI - 1 - Target", track_visibility='onchange')
     indicator2_2years_target = fields.Char(string="2 years PI - 2 - Target", track_visibility='onchange')
     indicator3_2years_target = fields.Char(string="2 years PI - 3 - Target", track_visibility='onchange')
-
+#Change 3
+    indicator1_description = fields.Text(string = "Tracking Indicator-How Indicator was selected and how community will keep track of it.",
+                                      help="Please give a brief description of how this indicator was selcted and how community will keep track of the indicator.",
+                                      track_visibility='onchange')
+	
+    indicator2_description = fields.Text(string = "Tracking Indicator-How Indicator was selected and how community will keep track of it.",
+                                      help="Please give a brief description of how this indicator was selcted and how community will keep track of the indicator.",
+                                      track_visibility='onchange')
+    indicator3_description = fields.Text(string = "Tracking Indicator-How Indicator was selected and how community will keep track of it.",
+                                      help="Please give a brief description of how this indicator was selcted and how community will keep track of the indicator.",
+                                      track_visibility='onchange')
 
     pathways_ideas = fields.Integer(string="Pathways - Number of Ideas",
                                     help="Please enter the number of ideas the community brainstormed for their pathway.",
                                     track_visibility='onchange')
-    
+    #change2
+    all_pathways_ideas = fields.Text(string = "Pathways - Brief description of all pathways",
+                                      help="Please give a brief decsription of how and why each of the pathways was chosen by the community.",
+                                      track_visibility='onchange')
     project_description = fields.Text(string = "Pathways - Selected Pathway Description",
                                       help="Please describe the community's chosen project in their own words.",
                                       track_visibility='onchange')
