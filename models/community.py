@@ -228,7 +228,10 @@ class Community(models.Model):
     goals_ideas = fields.Integer(string="Goals - Number of Ideas",
                                  help="Please enter the number of ideas the community brainstormed for their goal.",
                                  track_visibility='onchange')
-    #change 2
+    # Change1
+    all_goals_ideas = fields.Text(string="Goals - Brief descriptionof of all goals",
+                                 help="Please give a brief decsription of how and why these goals were selected by the community.",
+                                 track_visibility='onchange')
     goals_selected = fields.Text(string="Goals - Selected Goal Description",
                                  help="Please describe the community's chosen goal in their own words.",
                                  track_visibility='onchange')
