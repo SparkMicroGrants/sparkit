@@ -229,8 +229,8 @@ class Community(models.Model):
                                  help="Please enter the number of ideas the community brainstormed for their goal.",
                                  track_visibility='onchange')
     # Change1
-    all_goals_ideas = fields.Text(string="Goals - Brief description of all goals",
-                                 help="Please give a brief decsription of how and why these goals were selected by the community.",
+    all_goals_ideas = fields.Text(string="All Goals - Brief description of all goals",
+                                 help="Please give a brief description of how and why these goals were selected by the community.",
                                  track_visibility='onchange')
     goals_selected = fields.Text(string="Goals - Selected Goal Description",
                                  help="Please describe the community's chosen goal in their own words.",
@@ -281,7 +281,7 @@ class Community(models.Model):
                                     help="Please enter the number of ideas the community brainstormed for their pathway.",
                                     track_visibility='onchange')
 #change2
-    all_pathways_ideas = fields.Text(string = "Pathways - Brief description of all pathways",
+    all_pathways_ideas = fields.Text(string = "All Pathways - Brief description of all pathways",
                                       help="Please give a brief decsription of how and why each of the pathways was chosen by the community.",
                                       track_visibility='onchange')
 #end of change 2
