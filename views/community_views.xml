@@ -706,69 +706,67 @@
 												</group>
 												<group colspan="4" col="11">
 													<group>
-													<field name="indicator1" placeholder="Indicator 1"/>
-													<field name="indicator1_baseline" nolabel="1" placeholder="Baseline"/>
-													<field name="indicator1_6month_target" nolabel="1" placeholder="6 months PI Target"/>
-													<field name="indicator1_6months" nolabel="1" placeholder="6 months PI"
-														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
-															('phase', '!=', 'graduated')]}"/>
-													<field name="indicator1_12months_target" nolabel="1" placeholder="12 months PI Target"/>
-													<field name="indicator1_12months" nolabel="1" placeholder="12 months PI"
-														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
-															('phase', '!=', 'graduated')]}"/>
-													<field name="indicator1_18months_target" nolabel="1" placeholder="18 months PI Target"/>
-													<field name="indicator1_18months" nolabel="1" placeholder="18 months PI"
-														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
-															('phase', '!=', 'graduated')]}"/>
-													<field name="indicator1_2years_target" nolabel="1" placeholder="Graduation Target"/>
-													<field name="indicator1_2years" nolabel="1" placeholder="2 years PI"
-														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
-															('phase', '!=', 'graduated')]}"/>
-												        <field name="indicator1_description"/>
+														<field name="indicator1" placeholder="Indicator 1"/>
+														<field name="indicator1_baseline" nolabel="1" placeholder="Baseline"/>
+														<field name="indicator1_6month_target" nolabel="1" placeholder="6 months PI Target"/>
+														<field name="indicator1_6months" nolabel="1" placeholder="6 months PI"
+															attrs="{'invisible': [('phase', '!=', 'post_implementation'),
+																('phase', '!=', 'graduated')]}"/>
+														<field name="indicator1_12months_target" nolabel="1" placeholder="12 months PI Target"/>
+														<field name="indicator1_12months" nolabel="1" placeholder="12 months PI"
+															attrs="{'invisible': [('phase', '!=', 'post_implementation'),
+																('phase', '!=', 'graduated')]}"/>
+														<field name="indicator1_18months_target" nolabel="1" placeholder="18 months PI Target"/>
+														<field name="indicator1_18months" nolabel="1" placeholder="18 months PI"
+															attrs="{'invisible': [('phase', '!=', 'post_implementation'),
+																('phase', '!=', 'graduated')]}"/>
+														<field name="indicator1_2years_target" nolabel="1" placeholder="Graduation Target"/>
+														<field name="indicator1_2years" nolabel="1" placeholder="2 years PI"
+															attrs="{'invisible': [('phase', '!=', 'post_implementation'),
+																('phase', '!=', 'graduated')]}"/>
+														<field name="indicator1_description"/>
 												        </group>
 													<group>
-													<field name="indicator2" placeholder="Indicator 2"/>
-													<field name="indicator2_baseline" nolabel="1" placeholder="Baseline"/>
-													<field name="indicator2_6month_target" nolabel="1" placeholder="6 months PI Target"/>
-													<field name="indicator2_6months" nolabel="1" placeholder="6 months PI"
-														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
-															('phase', '!=', 'graduated')]}"/>
-													<field name="indicator2_12months_target" nolabel="1" placeholder="12 months PI Target"/>
-													<field name="indicator2_12months" nolabel="1" placeholder="12 months PI"
-														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
-															('phase', '!=', 'graduated')]}"/>
-													<field name="indicator2_18months_target" nolabel="1" placeholder="18 months PI Target"/>
-													<field name="indicator2_18months" nolabel="1" placeholder="18 months PI"
-														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
-															('phase', '!=', 'graduated')]}"/>
-													<field name="indicator2_2years_target" nolabel="1" placeholder="Graduation Target"/>
-													<field name="indicator2_2years" nolabel="1" placeholder="2 years PI"
-														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
-															('phase', '!=', 'graduated')]}"/>
-													
-											                <field name="indicator2_description"/>
+														<field name="indicator2" placeholder="Indicator 2"/>
+														<field name="indicator2_baseline" nolabel="1" placeholder="Baseline"/>
+														<field name="indicator2_6month_target" nolabel="1" placeholder="6 months PI Target"/>
+														<field name="indicator2_6months" nolabel="1" placeholder="6 months PI"
+															attrs="{'invisible': [('phase', '!=', 'post_implementation'),
+																('phase', '!=', 'graduated')]}"/>
+														<field name="indicator2_12months_target" nolabel="1" placeholder="12 months PI Target"/>
+														<field name="indicator2_12months" nolabel="1" placeholder="12 months PI"
+															attrs="{'invisible': [('phase', '!=', 'post_implementation'),
+																('phase', '!=', 'graduated')]}"/>
+														<field name="indicator2_18months_target" nolabel="1" placeholder="18 months PI Target"/>
+														<field name="indicator2_18months" nolabel="1" placeholder="18 months PI"
+															attrs="{'invisible': [('phase', '!=', 'post_implementation'),
+																('phase', '!=', 'graduated')]}"/>
+														<field name="indicator2_2years_target" nolabel="1" placeholder="Graduation Target"/>
+														<field name="indicator2_2years" nolabel="1" placeholder="2 years PI"
+															attrs="{'invisible': [('phase', '!=', 'post_implementation'),
+																('phase', '!=', 'graduated')]}"/>
+                                                                                               			<field name="indicator2_description"/>
 											                </group>
 													<group>
-													<field name="indicator3" placeholder="Indicator 3"/>
-													<field name="indicator3_baseline" nolabel="1" placeholder="Baseline"/>
-													<field name="indicator3_6month_target" nolabel="1" placeholder="6 months PI Target"/>
-													<field name="indicator3_6months" nolabel="1" placeholder="6 months PI"
-														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
-															('phase', '!=', 'graduated')]}"/>
-													<field name="indicator3_12months_target" nolabel="1" placeholder="12 months PI Target"/>
-													<field name="indicator3_12months" nolabel="1" placeholder="12 months PI"
-														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
-															('phase', '!=', 'graduated')]}"/>
-													<field name="indicator3_18months_target" nolabel="1" placeholder="18 months PI Target"/>
-													<field name="indicator3_18months" nolabel="1" placeholder="18 months PI"
-														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
-															('phase', '!=', 'graduated')]}"/>
-													<field name="indicator3_2years_target" nolabel="1" placeholder="Graduation Target"/>
-													<field name="indicator3_2years" nolabel="1" placeholder="2 years PI"
-														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
-															('phase', '!=', 'graduated')]}"/>
-			
-												        <field name="indicator3_description"/>
+														<field name="indicator3" placeholder="Indicator 3"/>
+														<field name="indicator3_baseline" nolabel="1" placeholder="Baseline"/>
+														<field name="indicator3_6month_target" nolabel="1" placeholder="6 months PI Target"/>
+														<field name="indicator3_6months" nolabel="1" placeholder="6 months PI"
+															attrs="{'invisible': [('phase', '!=', 'post_implementation'),
+																('phase', '!=', 'graduated')]}"/>
+														<field name="indicator3_12months_target" nolabel="1" placeholder="12 months PI Target"/>
+														<field name="indicator3_12months" nolabel="1" placeholder="12 months PI"
+															attrs="{'invisible': [('phase', '!=', 'post_implementation'),
+																('phase', '!=', 'graduated')]}"/>
+														<field name="indicator3_18months_target" nolabel="1" placeholder="18 months PI Target"/>
+														<field name="indicator3_18months" nolabel="1" placeholder="18 months PI"
+															attrs="{'invisible': [('phase', '!=', 'post_implementation'),
+																('phase', '!=', 'graduated')]}"/>
+														<field name="indicator3_2years_target" nolabel="1" placeholder="Graduation Target"/>
+														<field name="indicator3_2years" nolabel="1" placeholder="2 years PI"
+															attrs="{'invisible': [('phase', '!=', 'post_implementation'),
+																('phase', '!=', 'graduated')]}"/>
+														<field name="indicator3_description"/>
 												        </group>
 											</group>
 										</page>
