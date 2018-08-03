@@ -723,7 +723,9 @@
 													<field name="indicator1_2years" nolabel="1" placeholder="2 years PI"
 														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
 															('phase', '!=', 'graduated')]}"/>
-													<field name="indicator1_description"/>
+												</group>
+												<field name="indicator1_description"/>
+												</group>
 													<field name="indicator2" placeholder="Indicator 2"/>
 													<field name="indicator2_baseline" nolabel="1" placeholder="Baseline"/>
 													<field name="indicator2_6month_target" nolabel="1" placeholder="6 months PI Target"/>
@@ -742,7 +744,9 @@
 													<field name="indicator2_2years" nolabel="1" placeholder="2 years PI"
 														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
 															('phase', '!=', 'graduated')]}"/>
-													<field name="indicator2_description"/>
+												</group>
+											        <field name="indicator2_description"/>
+											                </group>
 													<field name="indicator3" placeholder="Indicator 3"/>
 													<field name="indicator3_baseline" nolabel="1" placeholder="Baseline"/>
 													<field name="indicator3_6month_target" nolabel="1" placeholder="6 months PI Target"/>
@@ -761,7 +765,8 @@
 													<field name="indicator3_2years" nolabel="1" placeholder="2 years PI"
 														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
 															('phase', '!=', 'graduated')]}"/>
-													<field name="indicator3_description"/>
+										                </group>
+												<field name="indicator3_description"/>
 												</group>
 											</group>
 										</page>
