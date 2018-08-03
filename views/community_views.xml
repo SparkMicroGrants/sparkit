@@ -685,6 +685,7 @@
 												<group colspan="2" col="2">
 													<field name="goals_ideas"/>
 													<field name="pathways_ideas"/>
+													<field name="all_pathways_ideas">
 													<field name="project_category_id"
 															widget="selection"/>
 													<field name="project_subcategory_id"
@@ -722,6 +723,7 @@
 													<field name="indicator1_2years" nolabel="1" placeholder="2 years PI"
 														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
 															('phase', '!=', 'graduated')]}"/>
+													<field name="indicator1_description"/>
 													<field name="indicator2" placeholder="Indicator 2"/>
 													<field name="indicator2_baseline" nolabel="1" placeholder="Baseline"/>
 													<field name="indicator2_6month_target" nolabel="1" placeholder="6 months PI Target"/>
@@ -740,6 +742,7 @@
 													<field name="indicator2_2years" nolabel="1" placeholder="2 years PI"
 														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
 															('phase', '!=', 'graduated')]}"/>
+													<field name="indicator2_description"/>
 													<field name="indicator3" placeholder="Indicator 3"/>
 													<field name="indicator3_baseline" nolabel="1" placeholder="Baseline"/>
 													<field name="indicator3_6month_target" nolabel="1" placeholder="6 months PI Target"/>
@@ -758,6 +761,7 @@
 													<field name="indicator3_2years" nolabel="1" placeholder="2 years PI"
 														attrs="{'invisible': [('phase', '!=', 'post_implementation'),
 															('phase', '!=', 'graduated')]}"/>
+													<field name="indicator3_description"/>
 												</group>
 											</group>
 										</page>
