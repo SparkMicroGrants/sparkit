@@ -267,14 +267,14 @@ class Community(models.Model):
     indicator3_2years_target = fields.Char(string="2 years PI - 3 - Target", track_visibility='onchange')
 #Change 3
     indicator1_description = fields.Text(string = "Tracking Indicator1-Description of how/why Indicator 1 was selected and how community will keep track of it.",
-                                      help="Please give a brief description of how this indicator was selcted and how community will keep track of the indicator.",
+                                      help="Please give a brief description of how this indicator was selected and how community will keep track of the indicator.",
                                       track_visibility='onchange')
 	
     indicator2_description = fields.Text(string = "Tracking Indicator2-Description of how/why Indicator 2 was selected and how community will keep track of it.",
-                                      help="Please give a brief description of how this indicator was selcted and how community will keep track of the indicator.",
+                                      help="Please give a brief description of how this indicator was selected and how community will keep track of the indicator.",
                                       track_visibility='onchange')
     indicator3_description = fields.Text(string = "Tracking Indicator3-Description of how/why Indicator 3 was selected and how community will keep track of it.",
-                                      help="Please give a brief description of how this indicator was selcted and how community will keep track of the indicator.",
+                                      help="Please give a brief description of how this indicator was selected and how community will keep track of the indicator.",
                                       track_visibility='onchange')
 #end of test 3
     pathways_ideas = fields.Integer(string="Pathways - Number of Ideas",
@@ -282,7 +282,7 @@ class Community(models.Model):
                                     track_visibility='onchange')
 #change2
     all_pathways_ideas = fields.Text(string = "All Pathways - Brief description of all pathways",
-                                      help="Please give a brief decsription of how and why each of the pathways was chosen by the community.",
+                                      help="Please give a brief description of how and why each of the pathways was chosen by the community.",
                                       track_visibility='onchange')
 #end of change 2
     project_description = fields.Text(string = "Pathways - Selected Pathway Description",
