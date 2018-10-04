@@ -127,9 +127,6 @@ class Community(models.Model):
                                               track_visibility='onchange')
     num_ppl_in_planning_group = fields.Integer(string="Number of People in Planning Group",
                                                track_visibility='onchange')
-    #added code (DEB)
-    num_fem_community = fields.Integer(string="Number of Women in Community",
-                                      track_visibility='onchange', required=True)
 
     # DATA
     avg_attendance = fields.Float(string="Average Attendance (last 90 days)",
