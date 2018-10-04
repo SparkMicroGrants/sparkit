@@ -235,6 +235,7 @@ class Community(models.Model):
     all_goals_ideas = fields.Text(string="All Goals - Brief description of all goals",
                                  help="Please give a brief description of how and why these goals were selected by the community.",
                                  track_visibility='onchange')
+    #end of change 1
     goals_selected = fields.Text(string="Goals - Selected Goal Description",
                                  help="Please describe the community's chosen goal in their own words.",
                                  track_visibility='onchange')
@@ -279,7 +280,7 @@ class Community(models.Model):
     indicator3_description = fields.Text(string = "Tracking Indicator3-Description of how/why Indicator 3 was selected and how community will keep track of it.",
                                       help="Please give a brief description of how this indicator was selected and how community will keep track of the indicator.",
                                       track_visibility='onchange')
-#end of test 3
+#end of change 3
     pathways_ideas = fields.Integer(string="Pathways - Number of Ideas",
                                     help="Please enter the number of ideas the community brainstormed for their pathway.",
                                     track_visibility='onchange')
