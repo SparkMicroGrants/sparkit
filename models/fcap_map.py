@@ -10,7 +10,7 @@ class FCAPMap(models.Model):
 	# Default FCAP Phases. These phases are the broader bucket categories that
 	# each state (in Spark terms, step) fall into. Then, each state(step)
 	# has certain activities that facilitators use in meetings.
-	name = fields.Char(string="Phase")
+	name = fields.Char(string="Phase", translate=True)
 	phase = fields.Selection([('planning', 'Planning'),
 		('implementation', 'Implementation'),
 		('post_implementation', 'Post Implementation'),
@@ -23,7 +23,7 @@ class FCAPMap(models.Model):
 class FCAPStep(models.Model):
 	_name = 'sparkit.fcapstep'
 
-	name = fields.Char(string="Name")
+	name = fields.Char(string="Name", translate=True)
 	phase_id = fields.Many2one('sparkit.fcapmap', string="Phase",
 		ondelete='cascade')
 	state = fields.Selection([
