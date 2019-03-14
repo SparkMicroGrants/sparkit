@@ -27,7 +27,11 @@ class ProgramReview(models.Model):
                                 ('5', 'Q1 2018'),
                                 ('6', 'Q2 2018'),
                                 ('7', 'Q3 2018'),
-                                ('8', 'Q4 2018')], select=True, string="Quarter")
+                                ('8', 'Q4 2018')
+                                ('9', 'Q1 2019')
+                                ('10', 'Q2 2019')
+                                ('11', 'Q3 2019')
+                                ('12', 'Q4 2019')], select=True, string="Quarter")
     color = fields.Selection([('green', 'Green'),
                               ('yellow', 'Yellow'),
                               ('red', 'Red')], select=True, string="Color")
